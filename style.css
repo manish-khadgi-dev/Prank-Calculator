@@ -1,0 +1,155 @@
+body{
+margin: 0;
+font-size: 1rem;
+}
+
+
+*{
+box-sizing: border-box;
+}
+
+
+.wrapper{
+    background: linear-gradient(180deg,rgba(249,254,1,0.38)0%,rgba(4,255,225,0.36)100%);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background: rgba(58, 207, 9, 0.309); 
+    /* backdrop-filter: blur(18.5px); */
+    border-radius: 10px;
+    width: 400px;
+    padding: 2rem 1.5rem;
+    font-size: 2rem;
+    z-index: 10;
+    position: relative;
+
+    
+   
+
+    /* grid */
+    display: grid;
+    gap: 5px;
+
+    grid-template-areas: 
+    "display display display display"
+    "ac c perc divide"
+    "btn7 btn8 btn9 multi"
+    "btn4 btn5 btn6 sub"
+    "btn1 btn2 btn3 plus"
+    "btn0 btn0 dot ans";
+}
+
+
+.calculator div{
+    background: grey;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter: drop-shadow( -12px 12px 14px rgba(0,0,0,0.25));
+
+    background: rgba(166, 199, 169, 0);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+.calculator .display {
+    
+    grid-area: display;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    background: white;
+    border-radius: 5px;
+
+}
+
+.btn-ac{
+    grid-area: ac;
+}
+.btn-c{
+    grid-area: c;
+}
+
+.btn-perc{
+    grid-area: perc;
+}
+.btn-divide{
+    grid-area: divide;
+}
+.btn-7{
+grid-area: btn7;
+}
+.btn-8{
+    grid-area: btn8;
+}
+.btn-9{
+    grid-area: btn9;
+}
+.btn-multi{
+    grid-area: multi;
+}
+.btn-4{
+    grid-area: btn4;
+}
+.btn-5{
+    grid-area: btn5;
+}
+.btn-6{
+    grid-area: btn6;
+}
+.btn-sub{
+    grid-area:sub;
+}
+.btn-1{
+    grid-area: btn1;
+}
+.btn-2{
+    grid-area: btn2;
+}
+.btn-3{
+    grid-area: btn3;
+}
+.btn-plus{
+    grid-area: plus;
+}
+.btn-0{
+    grid-area: btn0;
+}
+.btn-dot{
+    grid-area: dot;
+}
+.btn-ans{
+    grid-area: ans;
+}
+
+
+.circle{
+    background: #64638E;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background:linear-gradient(to right, rgba(2, 48, 74, 0.971),rgba(1, 11, 35, 0.844));
+    border-radius: 50%;
+
+
+    position: relative;
+    left: 10px;
+    bottom: 250px
+  }
